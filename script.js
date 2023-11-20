@@ -24,8 +24,10 @@ let twentysecond = new Date("22-12-2023")
 let twentythird = new Date("23-12-2023")
 let twentyfourth = new Date("24-12-2023")
 
-if (Date() < today) {
-    return false
-} else {
-    return true
+function open(){
+    if (Date() < today) {
+        return false
+    } else {
+        return true
+    }
 }
