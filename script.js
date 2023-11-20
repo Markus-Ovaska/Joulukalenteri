@@ -31,3 +31,5 @@ function open(){
         return true
     }
 }
+
+(document).snowfall({flakeCount : 100,collection : '.collectonme',  maxSpeed : 10});
