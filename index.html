@@ -5,41 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="script" href="script.js">
+    <script src="snow.js"></script>
     <title>Joulukalenteri</title>
+    <style>
+        #snow{
+        min-height: 100vh;
+        min-width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        }
+        h1{
+        font-size: 80px;
+        color: white;
+        }
+        </style>
 </head>
 <body>
-<p style="font-size: larger; font-weight: bold; ">Joulukalenteri</p>
+<p style="font-weight: bold; ">Uskomattoman mahtava <br> joulukalenteri</p>
 <table style="margin-top: 5%;">
 <tr> 
-    <td onclick="open()">1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-    <td>6</td>
+    <td class="day", id="day1",onclick="open()">1</td>
+    <td class="day", id="day2", onclick="open()">2</td>
+    <td class="day", id="day3", onclick="open()">3</td>
+    <td class="day", id="day4", onclick="open()">4</td>
+    <td class="day", id="day1", onclick="open()">5</td>
+    <td class="day", id="day1", onclick="open()">6</td>
 </tr>
 <tr>
-    <td>7</td>
-    <td>8</td>
-    <td>9</td>
-    <td>10</td>
-    <td>11</td>
-    <td>12</td>
+    <td class="day", id="day1", onclick="open()">7</td>
+    <td class="day", id="day1", onclick="open()">8</td>
+    <td class="day", id="day1", onclick="open()">9</td>
+    <td class="day", id="day1", onclick="open()">10</td>
+    <td class="day", id="day1", onclick="open()">11</td>
+    <td class="day", id="day1", onclick="open()">12</td>
 </tr>
-    <td>13</td>
-    <td>14</td>
-    <td>15</td>
-    <td>16</td>
-    <td>17</td>
-    <td>18</td>
+    <td class="day", id="day1", onclick="open()">13</td>
+    <td class="day", id="day1", onclick="open()">14</td>
+    <td class="day", id="day1", onclick="open()">15</td>
+    <td class="day", id="day1", onclick="open()">16</td>
+    <td class="day", id="day1", onclick="open()">17</td>
+    <td class="day", id="day1", onclick="open()">18</td>
 <tr>
-    <td>19</td>
-    <td>20</td>
-    <td>21</td>
-    <td>22</td>
-    <td>23</td>
-    <td>24</td>
+    <td class="day", id="day1", onclick="open()">19</td>
+    <td class="day", id="day1", onclick="open()">20</td>
+    <td class="day", id="day1", onclick="open()">21</td>
+    <td class="day", id="day1", onclick="open()">22</td>
+    <td class="day", id="day1", onclick="open()">23</td>
+    <td class="day", id="day1", onclick="open()">24</td>
 </tr>
 </table>
+  
 </body>
 </html>
