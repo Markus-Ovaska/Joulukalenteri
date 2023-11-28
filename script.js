@@ -32,4 +32,7 @@ function open(){
     }
 }
 
+- for (i = 0; i < 50; i++)
+  div(class="snowflake")
+  
 (document).snowfall({flakeCount : 100,collection : '.collectonme',  maxSpeed : 10});
