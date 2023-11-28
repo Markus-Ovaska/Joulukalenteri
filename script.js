@@ -38,7 +38,7 @@ let addSnow = () => {
     const random = (min, max) => Math.random() * (max - min) + min;
 let screenWidth = window.innerWidth;
 let screenHeight = window.innerHeight;
-};
+
 let snow = document.createElement('div');
 
 snow.style.position = "fixed";
@@ -65,13 +65,11 @@ const animateSnow = () => {
 };
 window.requestAnimationFrame(animateSnow);
 document.body.appendChild(snow);
+};
 
 for (let i = 0; i < 60; i++) {
     setTimeout(addSnow, i * 100);
-}
-
-
-
+};
 
 
 
