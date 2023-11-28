@@ -4,59 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="script" href="script.js">
+    <script src="script.js"></script>
     <script src="snow.js"></script>
     <title>Joulukalenteri</title>
-    <style>
-        #snow{
-        min-height: 100vh;
-        min-width: 100%;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        justify-content: center;
-        }
-        h1{
-        font-size: 80px;
-        color: white;
-        }
-        </style>
+
 </head>
 <body>
-<p style="font-weight: bold; ">Uskomattoman mahtava <br> joulukalenteri</p>
-<table style="margin-top: 5%;">
-<tr> 
-    <td class="day", id="day1",onclick="open()">1</td>
-    <td class="day", id="day2", onclick="open()">2</td>
-    <td class="day", id="day3", onclick="open()">3</td>
-    <td class="day", id="day4", onclick="open()">4</td>
-    <td class="day", id="day1", onclick="open()">5</td>
-    <td class="day", id="day1", onclick="open()">6</td>
-</tr>
-<tr>
-    <td class="day", id="day1", onclick="open()">7</td>
-    <td class="day", id="day1", onclick="open()">8</td>
-    <td class="day", id="day1", onclick="open()">9</td>
-    <td class="day", id="day1", onclick="open()">10</td>
-    <td class="day", id="day1", onclick="open()">11</td>
-    <td class="day", id="day1", onclick="open()">12</td>
-</tr>
-    <td class="day", id="day1", onclick="open()">13</td>
-    <td class="day", id="day1", onclick="open()">14</td>
-    <td class="day", id="day1", onclick="open()">15</td>
-    <td class="day", id="day1", onclick="open()">16</td>
-    <td class="day", id="day1", onclick="open()">17</td>
-    <td class="day", id="day1", onclick="open()">18</td>
-<tr>
-    <td class="day", id="day1", onclick="open()">19</td>
-    <td class="day", id="day1", onclick="open()">20</td>
-    <td class="day", id="day1", onclick="open()">21</td>
-    <td class="day", id="day1", onclick="open()">22</td>
-    <td class="day", id="day1", onclick="open()">23</td>
-    <td class="day", id="day1", onclick="open()">24</td>
-</tr>
-</table>
-  
+    <p style="font-weight: bold; ">Uskomattoman mahtava <br> joulukalenteri</p>
+    <table style="margin-top: 5%;">
+        <tr> 
+            <td onclick="openPopup(1, 'Day 1 content')">1</td>
+            <td onclick="openPopup(2, 'Day 2 content')">2</td>
+            <td onclick="openPopup(3, 'Day 3 content')">3</td>
+            <td onclick="openPopup(4, 'Day 4 content')">4</td>
+            <td onclick="openPopup(5, 'Day 5 content')">5</td>
+            <td onclick="openPopup(6, 'Day 6 content')">6</td>
+        </tr>
+        <tr>
+            <td onclick="openPopup(7, 'Day 7 content')">7</td>
+            <td onclick="openPopup(8, 'Day 8 content')">8</td>
+            <td onclick="openPopup(9, 'Day 9 content')">9</td>
+            <td onclick="openPopup(10, 'Day 10 content')">10</td>
+            <td onclick="openPopup(11, 'Day 11 content')">11</td>
+            <td onclick="openPopup(12, 'Day 12 content')">12</td>
+        </tr>
+        <tr>
+            <td onclick="openPopup(13, 'Day 13 content')">13</td>
+            <td onclick="openPopup(14, 'Day 14 content')">14</td>
+            <td onclick="openPopup(15, 'Day 15 content')">15</td>
+            <td onclick="openPopup(16, 'Day 16 content')">16</td>
+            <td onclick="openPopup(17, 'Day 17 content')">17</td>
+            <td onclick="openPopup(18, 'Day 18 content')">18</td>
+        </tr>
+        <tr>
+            <td onclick="openPopup(19, 'Day 19 content')">19</td>
+            <td onclick="openPopup(20, 'Day 20 content')">20</td>
+            <td onclick="openPopup(21, 'Day 21 content')">21</td>
+            <td onclick="openPopup(22, 'Day 22 content')">22</td>
+            <td onclick="openPopup(23, 'Day 23 content')">23</td>
+            <td onclick="openPopup(24, 'Day 24 content')">24</td>
+        </tr>
+    </table>
+    <div id="popup" class="popup"></div>
 </body>
 </html>

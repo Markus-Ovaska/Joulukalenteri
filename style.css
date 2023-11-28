@@ -1,41 +1,34 @@
 body {
     background-image: url('puu.gif');
     background-size: cover;
-    background-repeat: no-repeat;
-       
-       
-       
-       height: 100vh;
-       padding:0;
-       margin:0;
-      
+    height: 100vh;
+    padding: 0;
+    margin: 0;
     text-align: center;
-   
 }
-
-p{
-  color: antiquewhite;
-  font-size: 50px;
-  
+p {
+    color: rgb(0, 0, 0);
+    font-size: 35px;
 }
-
-
-table{
-font-family: cursive;
-
-
-width: 100%;
-height: 100%;
-
+table {
+    font-family: cursive;
+    width: 100%;
+    height: 100%;
 }
-
-td{
+td {
     color: white;
     background-color: rgba(255, 0, 0, 0.3);
     font-weight: bold;
-  }
-
-  
-
-
-
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
