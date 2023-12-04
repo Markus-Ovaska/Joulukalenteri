@@ -29,7 +29,7 @@ function openPopup(day, content) {
 
         setTimeout(function () {
             popup.style.display = 'none';
-        }, 4000);
+        }, 6000);
 
     } else {
         alert("Ei vielä tänne hätähousu.");
