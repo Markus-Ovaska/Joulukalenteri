@@ -1,21 +1,42 @@
-function openPopup(day, content) {
-    // Check if the clicked day is the current day
+
+function highlightCurrentDate() {
     var currentDate = new Date();
     var currentDay = currentDate.getDate();
 
+    var allDays = document.getElementsByClassName('day');
+    for (var i = 0; i < allDays.length; i++) {
+        if (parseInt(allDays[i].innerText) === currentDay) {
+            allDays[i].classList.add('highlighted');
+        }
+    }
+}
+
+
+function openPopup(day, content) {
+
+    var currentDate = new Date();
+    var currentDay = currentDate.getDate();
 
     if (day <= currentDay) {
-        // Get the popup element
+
         var popup = document.getElementById('popup');
 
-        // Set the content of the popup
+
         popup.innerHTML = content;
 
-        // Display the popup
+
         popup.style.display = 'block';
 
-        // You can customize this function further, e.g., to close the popup after a certain time
+        setTimeout(function () {
+            popup.style.display = 'none';
+        }, 4000);
+
     } else {
         alert("Ei vielä tänne hätähousu.");
     }
 }
+
+
+window.onload = function () {
+    highlightCurrentDate();
+};
